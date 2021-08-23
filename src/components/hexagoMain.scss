@@ -1,0 +1,85 @@
+$mainhex_w: calc(12vw + 140px);
+$mainhex_h: calc(12vw + 140px - 28px);
+
+.group {
+  display: flex;
+  justify-content: space-between;
+
+  .group_nav_one {
+    flex-grow: 0.1;
+  }
+
+  .group_nav_three {
+    flex-grow: 0.3;
+  }
+}
+
+.hex-container {
+  width: 100%;
+  height: 85vh;
+}
+
+.hex_start {
+  display: flex;
+  position: absolute;
+  justify-content:center;
+  align-items: center;
+  background: url(../img/romb.svg) no-repeat center;
+  background-size: contain;
+  transition: all 1.5s
+}
+
+.hexagon_desktop0 {
+  width: 70px;
+  height: 70px;
+  top: 82%;
+  left: 10%;
+  opacity: 0;
+  transition: 1s;
+}
+
+.hexagon_desktop1 {
+  width: calc(5vw + 50px);
+  height: 115px;
+  top: calc(49vh + 42px + 2vw + 70px);
+  left: calc(45vw - 180px - 5vw - 45px)
+}
+
+.hexagon_desktop2 {
+  width: calc(5vw + 90px);
+  height: 160px;
+  top: calc(49vh + 40px);
+  left: calc(45vw - 180px);
+}
+
+.hexagon_desktop3 {
+  width: $mainhex_w;
+  height: $mainhex_h;
+  max-width: 265px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.hexagon_desktop4 {
+  width: calc(5vw + 90px);
+  height: 160px;
+  top: calc(50vh - 125px - 70px);
+  left: calc(57vw + 30px);
+}
+
+.hexagon_desktop5 {
+  width: calc(5vw + 50px);
+  height: 115px;
+  top: calc(50vh - 125px - 70px - 45px);
+  left: calc(61vw + 120px);
+}
+
+.hexagon_desktop6 {
+  width: 70px;
+  height: 70px;
+  top: 7%;
+  left: 80%;
+  opacity: 0;
+  transition: 1s;
+}

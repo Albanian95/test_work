@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: url('./img/bg-circle.svg') 50%/80%, url('./img/bg-circle.svg') 50%/47%,
+                radial-gradient(circle, rgba(80,82,129,1) 13%, rgba(2,9,35,1) 72%);
+    background-repeat: no-repeat;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #030517;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+  }
+  
+  .web_mob {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  

@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Header } from './components/Header';
+import { HexagonMain } from './components/HexagonMain';
+
+
+const MobilWeb = () => {
+  return (window.innerWidth <= 375 && window.innerHeight <= 600 );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      MobilWeb()
+      ? <div className="web_mob">
+          <span>пожалуйста, запустите этот сайт с рабочего стола</span>
+        </div>
+
+      : <div>
+          <Header />
+          <HexagonMain />
+        </div>
+        )
 }
 
 export default App;

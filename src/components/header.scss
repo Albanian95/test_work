@@ -1,0 +1,38 @@
+.container {
+    width: 97vw;
+    padding-top: 5px;
+  
+    .out {
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+  }
+  
+  .nav {
+    text-decoration: none;
+    display: inline;
+  
+    a {
+      font-weight: 300;
+      text-decoration: none;
+      color: #f3f3f3;
+      position: relative;
+  
+      &.hover::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #f3f3f3;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+      }
+  
+      &.hover:hover::before {
+        visibility: visible;
+        width: 100%;
+      }
+    }
+  }
